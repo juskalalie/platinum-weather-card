@@ -291,7 +291,7 @@ export class PlatinumWeatherCard extends LitElement {
     const apparent = this.currentApparentTemperature;
     const apparentTemp = apparent != '' ? html`
       <div class="apparent-temp">
-        <div class="apparent">${this.localeTextFeelsLike}&nbsp;${apparent}</div>
+        <div class="apparent">Min:&nbsp;${this.currentTemperature}&nbsp;Max:&nbsp;${this.currentTemperature}</div>
         <div class="unit-temp-small"> ${this.getUOM('temperature')}</div>
       </div>
     ` : html``;
